@@ -1,6 +1,6 @@
 # EIRON - Extensible Intelligent Retrieval Open-source Navigator
 # Testing version
-# MIT License
+# GNU GPL V3 License
 # Created by - Koger
 import os
 import re
