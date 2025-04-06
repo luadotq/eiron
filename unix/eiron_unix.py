@@ -381,7 +381,6 @@ if __name__ == "__main__":
     engine = HybridSearchEngine()
     try:
         while True:
-            print("OSSE")
             print("\n1. Reindex\n2. Search\n3. Exit")
             choice = input(" > ").strip()
 
