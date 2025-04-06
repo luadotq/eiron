@@ -1,0 +1,10 @@
+psutil
+pandas
+python-docx
+openpyxl
+pdfminer.six
+html2text
+mmh3
+numpy
+python-dateutil
+tqdm
