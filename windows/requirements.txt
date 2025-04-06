@@ -1,0 +1,9 @@
+numpy
+pandas
+scikit-learn
+beautifulsoup4
+psutil
+pdfminer.six
+python-docx
+openpyxl
+html2text
