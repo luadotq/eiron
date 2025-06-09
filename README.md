@@ -1,5 +1,5 @@
-# Extensible Intelligent Retrieval Open-source Navigator (EIRON)
-![image](https://github.com/user-attachments/assets/0d0c20cc-7b49-410c-86a6-8a9e2439c423)
+# Extensible Intelligent Retrieval Open-source Navigator
+![image](https://github.com/user-attachments/assets/03de0c5b-2e1d-4fbf-abfa-dc58c45ed288)
 
 **Multi-platform document search engine** with Windows and Linux/Unix optimized versions
 ## Platform-Specific Features
@@ -16,7 +16,7 @@
 - **RLIMIT memory control**
 - **Optimized for server environments**
 
-## Supported Formats Matrix
+## Supported Formats
 
 | Format  | Windows | Linux/Unix  | Notes                    |
 |---------|---------|-------------|--------------------------|
@@ -25,36 +25,36 @@
 | DOC     | Yes       | Yes         |                          |
 | XLSX    | Yes       | Yes          | Sheet content            |
 | CSV     | Yes       | Yes          | Fast processing          |
-| HTML    | Yes       | Yes          | Clean text extraction    |
-| PPTX    | Yes       | No          | Windows only             |
+| HTML    | Yes       | Yes          | Text extraction    |
+| PPTX    | Yes       | No          | Windows feature             |
 | RTF     | Yes      | Yes          |                          |
 | TXT     | Yes       | Yes          |                          |
 
-## Installation Guides
+# Installation Guides
 
-# Windows Installation
+## Windows Installation
 
-## 1. Clone repository
+### 1. Clone repository
 ```shell
 git clone https://github.com/luadotq/eiron.git
 cd eiron/windows
 ```
-## 2. Install dependencies
+### 2. Install dependencies
 ```shell
 pip install -r requirements.txt
 ```
-# Linux Installation
+## Linux Installation
 
-## 1. Clone repository
+### 1. Clone repository
 ```shell
 git clone https://github.com/luadotq/eiron.git
 cd eiron/unix
 ```
-## 2. Install Python packages
+### 2. Install Python packages
 ```shell
 pip install -r requirements.txt
 ```
-### How to use
-1. Run eiron_win.py or eiron_unix.py (Depending on the operating system)
-2. For first run please index directory
-3. After indexing you can search
+# Usage
+### 1. Run eiron_win.py or eiron_unix.py (Depending on the operating system)
+### 2. For first run please index directory
+### 3. After indexing you can search
