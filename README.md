@@ -1,6 +1,6 @@
 # Extensible Intelligent Retrieval Open-source Navigator (EIRON)
 
-![image](https://github.com/user-attachments/assets/03de0c5b-2e1d-4fbf-abfa-dc58c45ed288)
+<img width="2068" height="1847" alt="image_2025-07-20_06-43-38" src="https://github.com/user-attachments/assets/011cc9ca-9af8-4191-93e8-35a5c025d25a" />
 
 **Multi-platform document search engine** for Windows and Linux/Unix, supporting both GUI and CLI modes.
 
@@ -55,28 +55,6 @@ cd eiron
 pip install -r requirements.txt
 ```
 
-#### requirements.txt
-```
-# Core dependencies
-numpy>=1.24.0
-scikit-learn>=1.3.0
-pandas>=2.0.0
-
-# GUI
-PyQt5>=5.15.0
-
-# Document processing
-python-docx>=0.8.11
-PyPDF2>=3.0.0
-openpyxl>=3.1.0
-beautifulsoup4>=4.12.0
-lxml>=4.9.0
-
-# System and performance
-psutil>=5.9.0
-lz4>=4.0.0
-```
-
 ---
 
 ## Usage
@@ -85,11 +63,11 @@ lz4>=4.0.0
 
 1. **Start the GUI:**
    ```shell
-   python -m gui.app
+   python -m eirongui.py
    ```
    or
    ```shell
-   python gui/app.py
+   python eirongui.py
    ```
 
 2. **Index your documents:**
@@ -111,26 +89,26 @@ lz4>=4.0.0
 
 1. **Index a directory:**
    ```shell
-   python cli/main.py index --folder /path/to/documents --index-file my_index.bin --indexer optimized
+   python eironcli.py index --folder /path/to/documents --index-file my_index.bin --indexer optimized
    ```
    - `--indexer` can be `auto`, `standard`, or `optimized` (auto is recommended)
 
 2. **Search:**
    ```shell
-   python cli/main.py search --query "your search text" --index-file my_index.bin --indexer auto --mode hybrid
+   python eironcli.py search --query "your search text" --index-file my_index.bin --indexer auto --mode hybrid
    ```
    - `--mode` can be `hybrid`, `keyword`, `semantic`, or `exact`
 
 3. **Show index info:**
    ```shell
-   python cli/main.py info --index-file my_index.bin
+   python eironcli.py info --index-file my_index.bin
    ```
 
 ---
 
 ## Platform-Specific Features
 
-- **Windows**: Office integration, higher memory usage for performance, PPTX support
+- **Windows**: Office integration, higher memory usage for performance
 - **Linux/Unix**: RLIMIT memory control, optimized for servers, lightweight mode
 - **Both**: All major formats, hybrid/semantic search, GUI and CLI
 
@@ -150,7 +128,7 @@ lz4>=4.0.0
 - Always re-index after adding or removing many files
 - Use the GUI for easy setup and monitoring, CLI for automation and scripting
 - You can use multiple index files for different datasets
-
+- Linux user's can get "Run of memory", just use RLIMIT control
 ---
 
 ## Development & Extensibility
@@ -162,18 +140,20 @@ lz4>=4.0.0
 ---
 
 ## Testing
-
-To run all tests:
-```shell
-python -m unittest discover tests
-```
-Or run any test directly:
+Packaged with 8 auto-test scripts
+Run any test directly:
 ```shell
 python tests/test_context_search.py
 ```
 
 ---
 
+## New Indexer alghorithm
+New "optimized" indexer increases processing efficiency by up to 80%
+
+<img width="1899" height="1837" alt="image_2025-07-20_06-44-30" src="https://github.com/user-attachments/assets/f7a7e3e8-24fc-4c16-9fb5-80c1ad12de94" />
+
+
 ## License
 
-This project is open-source and distributed under the MIT License. 
+This project is open-source and distributed under the GNU GPL 3 License
